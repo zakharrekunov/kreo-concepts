@@ -9,6 +9,7 @@ h1{margin:0 0 4px}.sub{color:var(--mut);margin-bottom:24px}
 .notes{width:100%;min-height:56px;background:#0f1319;color:var(--tx);border:1px solid #2a2f3a;border-radius:10px;padding:10px 12px;font:14px/1.45 inherit;resize:vertical;margin-bottom:14px}.notes:focus{outline:none;border-color:var(--acc)}
 .cnote{background:#12331f;border:1px solid #1f6b3a;color:#bfe9cd;border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.tile img{width:100%;border-radius:10px;display:block;cursor:zoom-in;background:#000}
 .tile video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border-radius:10px;cursor:pointer}
 </style></head><body>
 <h1>Крео — концепты</h1>
@@ -31,7 +32,7 @@ h1{margin:0 0 4px}.sub{color:var(--mut);margin-bottom:24px}
 </div>
 </section>
 <section class="concept">
-  <div class="head"><h2>3. говорящая голова + много кадров</h2><span class="cnt">4 видео</span></div>
+  <div class="head"><h2>3. говорящая голова + много кадров</h2><span class="cnt">5 видео</span></div>
   <textarea class="notes" data-key="c3" placeholder="Заметка по концепту (сохраняется в этом браузере)"></textarea>
   <div class="grid"><div class="tile"><video src="videos/3-1.mp4" preload="metadata" controls playsinline></video></div>
 <div class="tile"><video src="videos/3-2.mp4" preload="metadata" controls playsinline></video></div>
@@ -50,7 +51,7 @@ h1{margin:0 0 4px}.sub{color:var(--mut);margin-bottom:24px}
 </div>
 </section>
 <section class="concept">
-  <div class="head"><h2>5. тексволл + оверлей прилы</h2><span class="cnt">4 видео</span></div><div class="cnote">нарезка апки из AS / GP</div>
+  <div class="head"><h2>5. тексволл + оверлей прилы</h2><span class="cnt">6 видео</span></div><div class="cnote">нарезка апки из AS / GP</div>
   <textarea class="notes" data-key="c5" placeholder="Заметка по концепту (сохраняется в этом браузере)"></textarea>
   <div class="grid"><div class="tile"><video src="videos/5-1.mp4" preload="metadata" controls playsinline></video></div>
 <div class="tile"><video src="videos/5-2.mp4" preload="metadata" controls playsinline></video></div>
@@ -67,6 +68,8 @@ h1{margin:0 0 4px}.sub{color:var(--mut);margin-bottom:24px}
 </div>
 </section>
 
+<section class="concept"><div class="head"><h2>7. Симптомы: текст + визуал (UGC)</h2><span class="cnt">2 материала</span></div><textarea class="notes" data-key="c7" placeholder="Заметка (для Tanya)"></textarea><div class="grid"><div class="tile"><img src="media/sym-1.jpg" loading="lazy" onclick="window.open(this.src)"></div><div class="tile"><img src="media/sym-2.jpg" loading="lazy" onclick="window.open(this.src)"></div></div></section>
+<section class="concept"><div class="head"><h2>8. Промо аппы: статика / карусели (статистика, советы)</h2><span class="cnt">4 материала</span></div><textarea class="notes" data-key="c8" placeholder="Заметка (для Tanya)"></textarea><div class="grid"><div class="tile"><img src="media/promo-1.jpg" loading="lazy" onclick="window.open(this.src)"></div><div class="tile"><img src="media/promo-2.jpg" loading="lazy" onclick="window.open(this.src)"></div><div class="tile"><img src="media/promo-3.jpg" loading="lazy" onclick="window.open(this.src)"></div><div class="tile"><img src="media/promo-4.jpg" loading="lazy" onclick="window.open(this.src)"></div></div></section>
 <script>
 document.querySelectorAll('.notes').forEach(t=>{const k='kreo_'+t.dataset.key;try{const s=localStorage.getItem(k);if(s)t.value=s;}catch(e){}t.addEventListener('input',()=>{try{localStorage.setItem(k,t.value);}catch(e){}});});
 </script></body></html>
